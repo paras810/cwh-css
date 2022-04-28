@@ -8,42 +8,79 @@
     <title>css</title>
     <link rel="stylesheet" href="style.css">
 <style>
-    .box{
-        width: 70px;
-        height: 70px;
-        border: 2px solid;
-        margin: 3px;
+    .container{
+        border:  solid rgb(184, 49, 233) 2px;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+
+        /* flex properties for flex container */
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap-reverse; */
+        /* justify-content: center; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+        
+
     }
-    #box1{
-        background-color: #fa6c6c;
-        position: relative;
-        top: 40px;
+    .item{
+        width: 65px;
+        height:65px;
+        border: 1px solid;
+        margin: 2px;
+        background-color: #d4e5f7;
     }
-    #box2{
-        background-color: #7d6cfa;
-        /* visibility: hidden; */
-        /* display: none; */
-        position: relative;
-         top: 25px;
-         /* opacity: .8; */
-    }
-    #box3{
-        background-color: #54da51;
-    }
-    #box4{
-        background-color: #f2ca38;
-    }
+        /* flex properties for flex item */
+#item1{
+    background-color: #eb7d7d;
+ /* order: 30;    */
+/* flex-grow: 3; */
+/* flex-shrink: 3; */
+}
+#item2{
+    background-color: #7d9ceb;
+    /* order: 10; */
+/* flex-grow: 2; */
+/* flex-shrink: 1; */
+
+/* when flex-direction is set to row flex-basics: will control width */
+/* when flex-direction is set to column flex-basics: will control height */
+/* flex-basis: 100px; */
+/* align-self: center; */
+
+
+}
+#item3{
+    background-color: #71f838;
+    /* order: 20; */
+    /* flex-grow: 1; */
+    /* flex: 2 1 200px; */
+    /* align-self: center; */
+    /* align-self: flex-end;
+    align-self: flex-start;
+    align-self: center; */
+}
 </style>
     
 
 </head>
 
 <body>
- visibility and z-index
- <div class="box" id="box1"></div>
- <div class="box" id="box2"></div>
- <div class="box" id="box3"></div>
- <div class="box" id="box4"></div>
+    <div class="container">
+ <div class="item" id="item1">box 1</div>
+ <div class="item" id="item2">box 2</div>
+ <div class="item" id="item3">box 3</div>
+</div>
 </body>
 
 </html>
