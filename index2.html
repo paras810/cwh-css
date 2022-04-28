@@ -16,42 +16,41 @@
             font-size: 18px;
         }
 
-      .container{
-          display: flex;
-      }
-      .card{
-          background-color: #d7a264;
-          padding: 1rem;
-          border: 2px solid red;
-          margin: .1rem 1rem;
-          box-shadow: 3px 4px 11px 2px rgb(11 251 31);
-          /* box-shadow: inset 3px 4px 10px 5px rgb(11 251 31); */
+        :root {
+            --bg-color: rgb(194, 245, 244);
 
-          /* box-shadow: -2px 38px 0px 2px rgb(11 251 31), 14px 50px 7px 5px rgb(79 11 251), 58px 101px 7px 5px yellow ,  108px 150px 7px 5px rgb(255, 51, 0) ; */
-  
-      }
-      h2{
-        text-shadow: 0px 3px 5px white;
-      }
+        }
+
+        .box {
+            --box-color: rgb(255, 111, 0);
+            
+            width: 100px;
+            height: 100px;
+            background-color: var(--box-color);
+            border: 2px solid black;
+            margin: .4rem;
+            box-shadow: 1px 1px 7px 1px var(--box-color);
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--bg-color);
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
     </style>
 
 
 </head>
 
 <body>
- <div class="container">
-     <div class="card" id="card1">
-         <h2>card1</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-     </div>
-     <div class="card" id="card2">
-         <h2>card2</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-     </div>
-     <div class="card" id="card3">
-         <h2>card3</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-     </div>
- </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
 
 </html>
