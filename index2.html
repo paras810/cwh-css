@@ -14,30 +14,49 @@
     html{
         font-size: 18px;
     }
-   h1{
-       background-color: rgb(228, 73, 73);
-       color: antiquewhite;
-       text-align: center;
-   }
-   /* div li p{
-       background-color: rgb(247, 247, 15);
-       color: rgb(9, 9, 9);
-   } */
-   /* div > p{
-       background-color: rgb(247, 247, 15);
-       color: rgb(9, 9, 9);
-   } */
-   /* div + p{
-     background-color: blue;  
-     color: white;
-   } */
-   /* div ~ p{
-     background-color: blue;  
-     color: white;
-   } */
-   /* div > *{
-       background-color: rgb(248, 190, 82);
-   } */
+    .container{
+        border: 2px solid red;
+        display: block;
+        width: 244px;
+        margin: auto;
+
+    }
+    input[type="text"]{
+        padding: .2rem;
+        font-size: 1rem;
+    }
+  input{
+      display: block;
+  }
+  a[target='_blank']{
+      color: white;
+      background-color: red;
+  }
+  a[target='self']{
+      color: white;
+      background-color: rgba(0, 8, 241, 0.988);
+  }
+  /* li:nth-child(3){
+    color: rgb(0, 0, 0);
+      background-color: rgb(255, 170, 0);
+  } */
+ ul li:nth-last-child(2n+0){
+      background-color: rgb(255, 242, 0);
+  }
+  /* li:last-child{
+    color: rgb(0, 0, 0);
+      background-color: rgb(0, 221, 255);
+  } */
+ 
+ 
+  /* li:nth-child(odd){
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 170, 0);
+  } */
+  /* li:nth-child(even){
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 170, 0);
+  } */
 
 </style>
     
@@ -45,21 +64,27 @@
 </head>
 
 <body>
- <h1>this is more on selectors</h1>
  <div class="container">
+     <h1><a href="http://google.com" target="_blank" >go to google</a></h1>
+     <h1><a href="http://youtube.com" target="self" >go to youtube</a></h1>
+     <form action="">
+       <input type="text" name="" placeholder="enter your name" id="">
+       <input type="password" name="" id="" placeholder="enter your password">
+       <input type="submit" value="Sumbit">
+     </form>
      <ul>
-         <div>div inside ul</div>
-         <li class="item"><p>this is li para</p></li>
-         <li>this will not get affected</li>
-        <p>this is para inside ul</p>
+         <li class="item" id="item1">item1</li>
+         <li class="item" id="item2">item2</li>
+         <li class="item" id="item3">item3</li>
+         <li class="item" id="item4">item4</li>
+         <li class="item" id="item5">item5</li>
+         <li class="item" id="item6">item6</li>
+         <li class="item" id="item7">item7</li>
+         <li class="item" id="item8">item8</li>
+         <li class="item" id="item9">item9</li>
+         <li class="item" id="item10">item10</li>
      </ul>
-     <div class="row">
-         <p>this is a para</p>
-     </div>
-     <p>this is another para</p>
  </div>
- <p>this is outermost para</p>
- 
 </body>
 
 </html>
