@@ -7,80 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css</title>
     <link rel="stylesheet" href="style.css">
- <style>
-     *{
-         transition: all .1s linear;
-     }
-.navbar{
-    border: 4px solid #9407c7;
-    background-color: #e5bcf7;
-    border-radius: 10px;
-}
-.navbar ul{
-    
-    height: 5vh;
-    overflow: hidden;
-}
-.navbar ul li{
-    float: left;
-    list-style: none;
-    margin: 0 1px;
-}
-.navbar ul li a{
-text-decoration: none;
-padding: 4px;
-color: rgb(89, 89, 89);
-text-transform: capitalize;
-font-weight: bold;
-font-size: 16px;
-}
-.navbar ul li a:hover{
-color: #080808;
-border-bottom: 2px solid black;
-}
-.search{
-    float: right;
-    
-}
-.search label{
-    font-size: 14px;
-}
-.search input{
-width: 100px;
-border: 1.5px solid #01010178;
-padding: 0 2px;
-border-radius: 5px;
-margin-right: 4px;
-}
-.search input::placeholder{
-    font-size: 11px;
-    color: #9407c7;
-}
+ 
 
- </style>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        border: 2px solid;
+        width: 400px;
+        margin: 10%  auto;
+    }
+    
+img{
+    /* border: 3px blue solid; */
+    width: 100px;
+    margin: auto;
+    display: block;
+
+}
+h2{
+    /* border: 2px solid red;  */
+    text-align: center;
+}
+.box{
+    border: 2px solid ;
+    background-color: gray;
+    margin: 4px 0;
+   width: 32%;
+   display: inline-block;
+}
+.container{
+    width: 400px;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+</style>
 
 </head>
 
 <body>
  
-    <!-- <h1>Navigation</h1> -->
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li> <a href="#"> home</a></li>
-                <li> <a href="#"> about</a></li>
-                <li> <a href="#"> services</a></li>
-                <li> <a href="#"> contact us</a></li>
-                <div class="search">
-                    <label for="search" >Search: </label>
-                   <input type="text" name="search" id="search" placeholder="enter to search">
-    
-                </div>
-            </ul>
-           
-        </nav>
-    </header>
-
+   <header class="top">
+       <img src="./download.jpg" alt="">
+       <h2>Welcome to css</h2>
+   </header>
+<div class="container">
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, vitae asperiores incidunt distinctio blanditiis ullam accusantium quod.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, vitae asperiores incidunt distinctio blanditiis ullam accusantium quod.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, vitae asperiores incidunt distinctio blanditiis ullam accusantium quod.
+    </div>
+</div>
 </body>
 
 </html>
