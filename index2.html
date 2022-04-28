@@ -11,42 +11,53 @@
     *{
         padding: 0;margin: 0;box-sizing: border-box;
     }
-    /* html{
+    html{
         font-size: 62.5%;
-    } */
-    .container{
-        font-size: 10px;
-    border: 2px solid rgb(123, 255, 0);
-    width: 100vw;
-    height: 100vh;
-
-
     }
-.container h3{
-    text-align: center;
-}
-#first{
-    font-size: 2em;
-    padding: 2em;
-    border: 2px solid red;
-}
-#second{
-    font-size: 3em;
-}
-#third{
-    font-size: 4em;
-}
+    .box{
+        background-color: rgb(239, 96, 96);
+        color: rgb(250, 240, 240);
+        font-size: 3rem;
+        text-align: center;
+        display: none;
+    }
+
+    @media only screen and (max-width:300px) {
+        #box1{
+            display: block;
+        }
+    }
+    @media only screen and (min-width:301px)  and  (max-width:800px){
+        #box2{
+            display: block;
+            background-color: rgb(162, 52, 241);
+        }
+    }
+    @media only screen and (min-width:801px)  and  (max-width:1200px){
+        #box3{
+            display: block;
+            background-color: rgb(52, 241, 65);
+            color: black;
+        }
+    }
+    @media only screen and (min-width:1201px){
+        #box4{
+            display: block;
+            background-color: rgb(247, 240, 101);
+            color: black;
+        }
+    }
+
 </style>
     
 
 </head>
 
 <body>
-   <div class="container">
-       <h3 id="first">This is first heading</h3>
-       <h3 id="second">This is second heading</h3>
-       <h3 id="third">This is third heading</h3>
-   </div>
+   <div class="box" id="box1">iphone</div>
+   <div class="box" id="box2">tablet</div>
+   <div class="box" id="box3">laptop</div>
+   <div class="box" id="box4">desktop</div>
 </body>
 
 </html>
