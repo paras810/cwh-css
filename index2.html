@@ -7,84 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css</title>
     <link rel="stylesheet" href="style.css">
-<style>
-    /* *{
-        padding: 0;margin: 0;box-sizing: border-box;
-    } */
-    html{
-        font-size: 18px;
-    }
-    .container{
-        border: 2px solid red;
-        display: block;
-        width: 244px;
-        margin: auto;
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    }
-    input[type="text"]{
-        padding: .2rem;
-        font-size: 1rem;
-    }
-  input{
-      display: block;
-  }
-  a[target='_blank']{
-      color: white;
-      background-color: red;
-  }
-  a[target='self']{
-      color: white;
-      background-color: rgba(0, 8, 241, 0.988);
-  }
-  /* li:nth-child(3){
-    color: rgb(0, 0, 0);
-      background-color: rgb(255, 170, 0);
-  } */
- ul li:nth-last-child(2n+0){
-      background-color: rgb(255, 242, 0);
-  }
-  /* li:last-child{
-    color: rgb(0, 0, 0);
-      background-color: rgb(0, 221, 255);
-  } */
- 
- 
-  /* li:nth-child(odd){
-      color: rgb(0, 0, 0);
-      background-color: rgb(255, 170, 0);
-  } */
-  /* li:nth-child(even){
-      color: rgb(0, 0, 0);
-      background-color: rgb(255, 170, 0);
-  } */
+        html {
+            font-size: 18px;
+        }
 
-</style>
-    
+        body {
+            background-color: black;
+            color: rgb(245, 229, 229);
+            /* background: url("https://source.unsplash.com/1600x1200?code") no-repeat center center/cover;
+        object-fit: cover; */
+        }
+
+        header::before {
+            content: "";
+            background: url("https://source.unsplash.com/1600x1200?food") no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .3;
+
+            /* content: "";
+            background: url(./download.jpg) no-repeat center center/cover ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: .5; */
+
+        }
+
+        .navigation {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 0 .7rem;
+            text-transform: capitalize;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 0 1rem;
+            /* border: 2px solid #81d90e; */
+            text-align: center;
+            height: 70vh;
+            justify-content: center;
+        }
+
+        /* section::before{
+       content: 'this is content';
+   } */
+        h3 {
+            font-size: 2.3rem;
+            text-transform: capitalize;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .end {
+            text-align: center;
+            text-transform: capitalize;
+
+        }
+    </style>
+
 
 </head>
 
 <body>
- <div class="container">
-     <h1><a href="http://google.com" target="_blank" >go to google</a></h1>
-     <h1><a href="http://youtube.com" target="self" >go to youtube</a></h1>
-     <form action="">
-       <input type="text" name="" placeholder="enter your name" id="">
-       <input type="password" name="" id="" placeholder="enter your password">
-       <input type="submit" value="Sumbit">
-     </form>
-     <ul>
-         <li class="item" id="item1">item1</li>
-         <li class="item" id="item2">item2</li>
-         <li class="item" id="item3">item3</li>
-         <li class="item" id="item4">item4</li>
-         <li class="item" id="item5">item5</li>
-         <li class="item" id="item6">item6</li>
-         <li class="item" id="item7">item7</li>
-         <li class="item" id="item8">item8</li>
-         <li class="item" id="item9">item9</li>
-         <li class="item" id="item10">item10</li>
-     </ul>
- </div>
-</body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h3>welcome to css/html</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit modi at sint dolore sapiente a cupiditate
+            voluptatum. Quia qui nulla ipsum impedit omnis! Excepturi!</p>
+    </section>
+    <hr>
+    <div class="end">the end</div>
 
 </html>
