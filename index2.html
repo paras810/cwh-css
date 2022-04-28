@@ -7,62 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css</title>
     <link rel="stylesheet" href="style.css">
- 
-
 <style>
-    *{
-        box-sizing: border-box;
-    }
-    header{
+    .box{
+        width: 70px;
+        height: 70px;
         border: 2px solid;
-        width: 400px;
-        margin: 10%  auto;
+        margin: 3px;
     }
-    
-img{
-    /* border: 3px blue solid; */
-    width: 100px;
-    margin: auto;
-    display: block;
-
-}
-h2{
-    /* border: 2px solid red;  */
-    text-align: center;
-}
-.box{
-    border: 2px solid ;
-    background-color: gray;
-    margin: 4px 0;
-   width: 32%;
-   display: inline-block;
-}
-.container{
-    width: 400px;
-    /* border: 2px solid red; */
-    margin: auto;
-}
+    #box1{
+        background-color: #fa6c6c;
+        position: relative;
+        top: 40px;
+    }
+    #box2{
+        background-color: #7d6cfa;
+        /* visibility: hidden; */
+        /* display: none; */
+        position: relative;
+         top: 25px;
+         /* opacity: .8; */
+    }
+    #box3{
+        background-color: #54da51;
+    }
+    #box4{
+        background-color: #f2ca38;
+    }
 </style>
+    
 
 </head>
 
 <body>
- 
-   <header class="top">
-       <img src="./download.jpg" alt="">
-       <h2>Welcome to css</h2>
-   </header>
-<div class="container">
-    <div class="box">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, vitae asperiores incidunt distinctio blanditiis ullam accusantium quod.
-    </div>
-    <div class="box">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, vitae asperiores incidunt distinctio blanditiis ullam accusantium quod.
-    </div>
-    <div class="box">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, vitae asperiores incidunt distinctio blanditiis ullam accusantium quod.
-    </div>
-</div>
+ visibility and z-index
+ <div class="box" id="box1"></div>
+ <div class="box" id="box2"></div>
+ <div class="box" id="box3"></div>
+ <div class="box" id="box4"></div>
 </body>
 
 </html>
