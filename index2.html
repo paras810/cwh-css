@@ -16,97 +16,42 @@
             font-size: 18px;
         }
 
-        body {
-            background-color: black;
-            color: rgb(245, 229, 229);
-            /* background: url("https://source.unsplash.com/1600x1200?code") no-repeat center center/cover;
-        object-fit: cover; */
-        }
+      .container{
+          display: flex;
+      }
+      .card{
+          background-color: #d7a264;
+          padding: 1rem;
+          border: 2px solid red;
+          margin: .1rem 1rem;
+          box-shadow: 3px 4px 11px 2px rgb(11 251 31);
+          /* box-shadow: inset 3px 4px 10px 5px rgb(11 251 31); */
 
-        header::before {
-            content: "";
-            background: url("https://source.unsplash.com/1600x1200?food") no-repeat center center/cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: .3;
-
-            /* content: "";
-            background: url(./download.jpg) no-repeat center center/cover ;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            opacity: .5; */
-
-        }
-
-        .navigation {
-            display: flex;
-        }
-
-        li {
-            list-style: none;
-            padding: 0 .7rem;
-            text-transform: capitalize;
-
-        }
-
-        section {
-            display: flex;
-            flex-direction: column;
-            margin: 0 1rem;
-            /* border: 2px solid #81d90e; */
-            text-align: center;
-            height: 70vh;
-            justify-content: center;
-        }
-
-        /* section::before{
-       content: 'this is content';
-   } */
-        h3 {
-            font-size: 2.3rem;
-            text-transform: capitalize;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        .end {
-            text-align: center;
-            text-transform: capitalize;
-
-        }
+          /* box-shadow: -2px 38px 0px 2px rgb(11 251 31), 14px 50px 7px 5px rgb(79 11 251), 58px 101px 7px 5px yellow ,  108px 150px 7px 5px rgb(255, 51, 0) ; */
+  
+      }
+      h2{
+        text-shadow: 0px 3px 5px white;
+      }
     </style>
 
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="navigation">
-                <li class="item">home</li>
-                <li class="item">about</li>
-                <li class="item">services</li>
-                <li class="item">contact us</li>
-            </ul>
-        </nav>
-
-    </header>
-    <section>
-        <h3>welcome to css/html</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit modi at sint dolore sapiente a cupiditate
-            voluptatum. Quia qui nulla ipsum impedit omnis! Excepturi!</p>
-    </section>
-    <hr>
-    <div class="end">the end</div>
+ <div class="container">
+     <div class="card" id="card1">
+         <h2>card1</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     </div>
+     <div class="card" id="card2">
+         <h2>card2</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     </div>
+     <div class="card" id="card3">
+         <h2>card3</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     </div>
+ </div>
 
 </html>
