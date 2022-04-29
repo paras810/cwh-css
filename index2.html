@@ -15,77 +15,42 @@
         html {
             font-size: 18px;
         }
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-property: background-color border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
 
-        .container {
-            background-color: yellow;
-            height: 95vh;
-
-        }
-
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            /* border-radius: 9999px; */
-            border-radius: 100%;
-            position: relative;
-            /* animation-name: paras; */
-            animation-name: paras2;
-            animation-duration: 5s;
-            animation-iteration-count: 2;
-            /* animation-fill-mode: forwards; */
-            /* animation-timing-function: ease; */
-            /* animation-delay: 2s;
-            /* animation-direction: reverse; */ 
-        }
-
-        @keyframes paras {
-            from {
-                width: 0%;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes paras2 {
-            0% {
-                top: 0;
-                left: 0;
-
-            }
-
-            25% {
-                left: 25%;
-                top: 0;
-            }
-
-            50% {
-                top: 25%;
-                left: 25%;
-            }
-
-            75% {
-                left: 0;
-                top: 25%;
-            }
-
-            100% {
-                top: 0;
-                left: 0;
-            }
-        }
+    /* shorhand */
+    transition: all 1s linear .1s;
+}
+.box:hover{
+    background-color: rgb(51, 216, 14);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    font-size: 35px;
+    margin-left: 4rem;
+}
+      
     </style>
 
 
 </head>
 
-<body>
-    <div class="container">
-        <div class="box"> </div>
-    </div>
-</body>
+<dy>
+   <h3>Transition</h3>
+   <div class="container">
+       <div class="box">
+           box
+       </div>
+   </div>
 
 
 </html>
