@@ -16,48 +16,60 @@
 
         html {
             font-size: 18px;
-            
+
         }
-       .grid{
-           display: grid;
-           grid-gap: 1rem;
-           /* grid-template-columns: repeat(3, 1fr); */
-           grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
-           /* justify-content: center;
-           align-items: center;
-           height: 100vh; */
-         
-       }
-       .item{
-           background-color: rgb(87, 238, 172);
-           border: 2px solid black;
-           text-align: center;
-           padding: 1rem;
-       }
+
+        .grid {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section aside'
+                'paras paras paras paras';
+
+        }
+
+        .item {
+            background-color: rgb(87, 238, 172);
+            border: 2px solid black;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .navbar {
+            grid-area: navbar;
+        }
+
+        .section {
+            grid-area: section;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+        .footer{
+            grid-area: paras;
+        }
     </style>
 
 
 </head>
 
 <body>
-  <h5>css grid</h5> 
-  <div class="grid">
-      <div class="item">item1</div>
-      <div class="item">item2</div>
-      <div class="item">item3</div>
-      <div class="item">item4</div>
-      <div class="item">item5</div>
-      <div class="item">item6</div>
-      <div class="item">item7</div>
-      <div class="item">item8</div>
-      <div class="item">item9</div>
-      <div class="item">item10</div>
-      <div class="item">item11</div>
-      <div class="item">item12</div>
-      <div class="item">item13</div>
-      <div class="item">item14</div>
-      <div class="item">item15</div>
-  </div>
+    <h5>css grid</h5>
+    <div class="grid">
+        <div class="navbar item">
+            home about contact us </div>
+        <div class="section item">
+            section
+        </div>
+        <div class="aside item">
+            aside
+        </div>
+        <div class="footer item">footer</div>
+
+      
+    </div>
 </body>
 
 
