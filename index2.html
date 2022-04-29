@@ -9,48 +9,53 @@
     <link rel="stylesheet" href="style.css">
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         html {
             font-size: 18px;
         }
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* transition-property: background-color border-radius;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    transition-delay: 2s; */
+        .container{
+            height: 90vh;
+            background-color: rgb(109, 165, 165);
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    /* shorhand */
-    transition: all 1s linear .1s;
-}
-.box:hover{
-    background-color: rgb(51, 216, 14);
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    font-size: 35px;
-    margin-left: 4rem;
-}
-      
+        }
+
+        .box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           transition: all 1s linear;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: skew(30deg);
+            transform: skewX(30deg);
+            transform: skewY(30deg); */
+            /* transform: scale(1.4); */
+            /* transform: translateX(-40px); */
+            /* transform: translateY(40px); */
+            /* transform: translate(90px, 70px); */
+
+        }
     </style>
 
 
 </head>
 
-<dy>
-   <h3>Transition</h3>
-   <div class="container">
-       <div class="box">
-           box
-       </div>
-   </div>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
 
 
 </html>
