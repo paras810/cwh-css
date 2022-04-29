@@ -16,45 +16,59 @@
 
         html {
             font-size: 18px;
+            
         }
-        .container{
-            height: 90vh;
-            background-color: rgb(109, 165, 165);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .box {
-            background-color: blue;
-            width: 100px;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           transition: all 1s linear;
-        }
-        .box:hover{
-            /* transform: rotate(360deg); */
-            /* transform: skew(30deg);
-            transform: skewX(30deg);
-            transform: skewY(30deg); */
-            /* transform: scale(1.4); */
-            /* transform: translateX(-40px); */
-            /* transform: translateY(40px); */
-            /* transform: translate(90px, 70px); */
-
-        }
+       .container{
+           border: 2px solid red;
+           background-color: burlywood;
+           display: grid;
+           width: 100vw;
+           /* grid-template-columns: 180px 180px 100px; */
+           /* grid-template-columns: 180px auto 100px; */
+           /* grid-template-columns: 1fr 4fr 1fr; */
+           grid-template-columns: repeat(3, 1fr);
+           /* gap: .5rem; */
+           grid-gap: .5rem;
+       }
+       .item{
+           /* width: 50px; */
+           height: 50px;
+           background-color: yellow;
+           border: 2px solid black;
+           margin: .5rem;
+           text-align: center;
+       }
     </style>
 
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">box</div>
-    </div>
+  <h5>css grid</h5> 
+  <div class="container">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+      <div class="item">item6</div>
+      <div class="item">item7</div>
+      <div class="item">item8</div>
+      <div class="item">item9</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+      <div class="item">item10</div>
+  </div>
 </body>
 
 
